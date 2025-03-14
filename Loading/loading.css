@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #000;
+    background-image: url('./darkface.jpeg');
+    height: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+}
+.lead{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: transparent;
+    position: fixed;
+    margin-right: 20%;
+}
+
+.lead h1{
+    font-size: 3em;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.progress-bar{
+   width:40vh;
+   height:2vh;
+   border-radius: 20px;
+   background-color: rgb(37, 37, 37);
+
+   && .progress{
+       height: 100%;
+       width: 1%;
+       border-radius: 20px;
+       background-color: rgb(28, 187, 160);
+       box-shadow: 0px 0px 10px aqua ;
+       transition: width 0.5s ease;
+
+       display: flex;
+       justify-content: end;
+
+       && .spiner{
+          height: 100%;
+          width: 13px;
+          border-radius: 50%;
+          background: #e6ecec;
+          
+       }
+   }
+}
+
+button{
+    background: white;
+}
