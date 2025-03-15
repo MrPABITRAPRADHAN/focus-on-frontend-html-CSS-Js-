@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type animation</title>
+    <link rel="stylesheet" href="typingtext.css">
+
+</head>
+<body>
+    <div class="lead">
+        <span class="text first">I'M </span>
+        <span class="text sec">PABITRA PADHAN</span>
+    </div>
+
+    <script>
+        const text = document.querySelector('.sec');
+        
+       textLoad= ()=>{
+        setTimeout(()=>{
+            text.textContent = "PABITRA PADHAN"
+        },0)
+
+        setTimeout(()=>{
+            text.textContent = "A FRONTEND DEVELOPER"
+        },2000)
+
+        setTimeout(()=>{
+            text.textContent = "A BACKEND DEVELOPER"
+        },4000)
+
+        setTimeout(()=>{
+            text.textContent = "A FULLSTACK DEVELOPER"
+        },6000)
+
+        setTimeout(()=>{
+            text.textContent = "A UI/UX DESIGNER"
+        },8000)
+
+       }
+       textLoad()
+       setInterval(textLoad, 10000)
+        
+
+    </script>
+</body>
+</html>
